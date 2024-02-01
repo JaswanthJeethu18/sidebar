@@ -1,0 +1,89 @@
+.Sidebar-main {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  background: #eeaeca;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.13);
+  transition: all 0.3s ease-in-out;
+}
+
+.Sidebar-header {
+  display: flex;
+  top: 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+}
+
+.logo .logo-icon {
+  font-size: 50px;
+}
+.Sidebar-header p {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.Sidebar-header p span {
+  color: #f54748;
+}
+
+.Sidebar-main .menu {
+  position: relative;
+  top: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+.Sidebar-main .menu .menu-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 20px;
+
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  height: 2.5rem;
+  position: relative;
+  font-size: 20px;
+}
+
+.active {
+  background: #f54748;
+  color: #fff;
+  margin-left: 0;
+}
+
+.active::before {
+  content: "";
+  height: 100%;
+  width: 8px;
+  background: #fff;
+}
+
+.menu .signout {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  height: 2.5rem;
+  position: relative;
+  font-size: 40px;
+}
+
+.menu .signout .logout {
+  font-size: 30px;
+}
+
+.menu .signout .logout:hover {
+  color: #f54748;
+}
